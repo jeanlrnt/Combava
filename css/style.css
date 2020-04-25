@@ -33,7 +33,7 @@ header h1 {
   font-size: 50px;
 }
 
-#home {
+#home_mobile {
   position: absolute;
   right: 5px;
   top: 15px;
@@ -92,9 +92,10 @@ nav {
   margin-bottom: 150px;
 }
 
-#evenements h2 {
+.sous-titre {
   text-align: center;
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 iframe {
@@ -159,14 +160,18 @@ form #valider input {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
 }
 
 #social img {
   width: 50px;
+}
+
+#social a {
   margin-right: 20px;
 }
 
-#social img:last-child {
+#social a:last-child {
   margin-right: 0;
 }
 
@@ -175,6 +180,114 @@ form #valider input {
   font-size: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  /* Tu peux faire la partie Desktop ici Léo :)*/
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: start;
+    padding-left: 100px;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+  
+  #home_mobile {
+    display: none;
+  }
+
+  nav {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  nav li:last-child {
+    margin-right: 0;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  body {
+    background-image: url(../images/fond_desktop.png);
+  }
+
+  #texte_presentation_mobile {
+    display: none;
+  }
+
+  #texte_presentation_desktop {
+    margin: 0;
+    display: block;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  #images_presentations_mobile {
+    display: none;
+  }
+
+  #legende {
+    display: none;
+  }
+
+  #evenements {
+    margin-top: 550px;
+  }
+
+  #evenements iframe {
+    display: inline-block;
+    position: relative;
+    right: 200px;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+  #evenements .desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    position: relative;
+    right: 50px;
+  }
+
+  #images_presentations_desktop {
+    display: block;
+    text-align: center;
+  }
+
+  #images_presentations_desktop #images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  #images_presentations_desktop #images .element {
+    margin-right: 150px;
+  }
+
+  #images_presentations_desktop #images .element:last-child {
+    margin-right: 0;
+  }
+
+  #images_presentations_desktop .images1 {
+    width: 473px;
+  }
+
+  #images_presentations_desktop .images2 {
+    width: 530px;
+  }
+
+  #images_presentations_desktop p {
+    font-size: 21px;
+  }
 }
