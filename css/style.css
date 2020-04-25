@@ -180,7 +180,7 @@ form #valider input {
   font-size: 10px;
 }
 
-@media only screen and (min-width: 768px) and (orientation: paysage) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   header {
     justify-content: start;
     padding-left: 100px;
