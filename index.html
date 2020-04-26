@@ -47,12 +47,12 @@
             </div>
             <div id="email">
               <label>E-mail :</label>
-              <input type="email" placeholder="combava@email.com" name="user_email">
+              <input type="email" placeholder="combava@email.com" required name="user_email" title="Veuillez saisir votre adresse e-mail">
             </div>
             <div id="evenement">
               <label>Évenement choisi :</label>
-              <select class="saisie event liste" name="liste event" size="1">
-                <option selected>Choisir un évènement</option>
+              <input required placeholder="Choisir un évènement de la liste" size="40" list="defaultAdress">
+              <datalist id="defaultAdress" name="liste event" size="1" title="Veuillez sélectionner une adresse">
                 <option value="AMAP_Poitiers">AMAP les Grand'Goules (3 Rue des Gravières, 86000 Grand Poitiers)</option>
                 <option value="AMAP_Civray">AMAP Bio des 2 rives (1 Rue des Écoles, 37150 Civray-de-Touraine)</option>
                 <option value="AMAP_LaRochelle">AMAP des Voiliers (21 Avenue du Champ de Mars, 17000 La Rochelle)</option>
@@ -68,10 +68,10 @@
                 <option value="BioMonde">BIOMONDE (14 Rue Saint-Patrice, 80000 Amiens)</option>
                 <option value="BioCBon">Bio c'Bon (116 Avenue d'Italie, 75013 Paris)</option>
                 <option value="ComptoirsBio">Les Comptoirs de la Bio (4 Avenue de Worms, 89000 Auxerre)</option>
-              </select>
+              </datalist>
             </div>
             <div id="valider">
-              <input type="button" value="ENVOYER">
+              <input type="submit" value="ENVOYER">
             </div>
           </form>
         </div>

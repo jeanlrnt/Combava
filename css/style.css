@@ -144,7 +144,7 @@ form #evenement {
   text-align: center;
 }
 
-form #evenement select {
+form #evenement datalist {
   width: 305px;
 }
 
