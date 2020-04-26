@@ -11,9 +11,10 @@
   font-family: 'Gloria';
 }
 
-body {
+.container {
   background-image: url(../images/fond_mobile.png);
   background-repeat: repeat-y;
+  width: 100%;
 }
 
 header {
@@ -44,7 +45,7 @@ nav {
 }
 
 .container {
-  margin: 100px 40px;
+  padding-top: 50px;
 }
 
 #texte_presentation_mobile {
@@ -64,16 +65,13 @@ nav {
   justify-content: center;
 }
 
-.images1 {
-  width: 278px;
-  height: 150;
-  margin-right: 15px;
+#images_presentations_mobile img {
+  width: 300px;
   border: 2px solid black;
 }
 
-.images2 {
-  width: 313px;
-  border: 2px solid black;
+.images1 {
+  margin-right: 15px;
 }
 
 #legende {
@@ -104,7 +102,7 @@ iframe {
 }
 
 form {
-  width: 500px;
+  width: 475px;
   border: 2px solid black;
   border-radius: 5%;
   padding: 10px;
@@ -185,12 +183,13 @@ form #valider input {
   header {
     justify-content: start;
     padding-left: 100px;
+    background-color: lightgray;
   }
 
   header h1 {
     font-size: 60px;
   }
-  
+
   #home_mobile {
     display: none;
   }
@@ -209,7 +208,11 @@ form #valider input {
   }
 
   nav li:last-child {
-    margin-right: 0;
+    margin-right: 0
+  }
+
+  nav li:hover {
+    background-color: gray;
   }
 
   nav li a {
@@ -217,8 +220,14 @@ form #valider input {
     color: black;
   }
 
-  body {
+  .container {
     background-image: url(../images/fond_desktop.png);
+    background-size: cover;
+
+      max-width: 1820px;
+      margin: 0 auto;
+      width: auto;
+      max-width: 1820px;
   }
 
   #texte_presentation_mobile {
@@ -226,10 +235,11 @@ form #valider input {
   }
 
   #texte_presentation_desktop {
-    margin: 0;
+    margin: 0px;
     display: block;
     font-size: 60px;
     text-align: center;
+    height: 800px;
   }
 
   #images_presentations_mobile {
@@ -241,13 +251,13 @@ form #valider input {
   }
 
   #evenements {
-    margin-top: 550px;
+    display: block;
+    text-align: center;
+    height: 500px;
   }
 
   #evenements iframe {
-    display: inline-block;
-    position: relative;
-    right: 200px;
+    display: block;
     border: 2px solid black;
     border-radius: 5%;
   }
@@ -255,9 +265,15 @@ form #valider input {
   #evenements .desktop {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 20px;
-    position: relative;
-    right: 50px;
+    justify-content: center;
+  }
+
+  #evenements .element {
+    margin-left: 75px;
+  }
+
+  #evenements .element:last-child {
+    margin-left: 0px;
   }
 
   #images_presentations_desktop {
@@ -272,20 +288,17 @@ form #valider input {
     margin-bottom: 70px;
   }
 
-  #images_presentations_desktop #images .element {
-    margin-right: 150px;
+  #images .element {
+    margin-right: 75px;
   }
 
-  #images_presentations_desktop #images .element:last-child {
-    margin-right: 0;
+  #images .element:last-child {
+    margin-right: 0px;
   }
 
-  #images_presentations_desktop .images1 {
-    width: 473px;
-  }
-
-  #images_presentations_desktop .images2 {
-    width: 530px;
+  #images_presentations_desktop img {
+    width: 500px;
+    border: 2px solid black;
   }
 
   #images_presentations_desktop p {
