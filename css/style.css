@@ -131,6 +131,14 @@ form #email input {
   width: 383px;
 }
 
+input:invalid {
+  border-color: red;
+}
+
+input:valid:focus {
+  border-color: green;
+}
+
 form #evenement {
   margin-top: 25px;
   text-align: center;
@@ -179,11 +187,10 @@ form #valider input {
   font-size: 10px;
 }
 
-@media only screen and (min-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) {
   header {
     justify-content: start;
     padding-left: 100px;
-    background-color: lightgray;
   }
 
   header h1 {
@@ -209,10 +216,6 @@ form #valider input {
 
   nav li:last-child {
     margin-right: 0
-  }
-
-  nav li:hover {
-    background-color: gray;
   }
 
   nav li a {
