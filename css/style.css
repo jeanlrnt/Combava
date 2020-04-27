@@ -145,8 +145,8 @@ form #evenement {
   text-align: center;
 }
 
-form #evenement datalist {
-  width: 305px;
+form #evenement input {
+  width: 300px;
 }
 
 form #valider {
@@ -227,11 +227,9 @@ form #valider input {
   .container {
     background-image: url(../images/fond_desktop.png);
     background-size: cover;
-
-      max-width: 1820px;
-      margin: 0 auto;
-      width: auto;
-      max-width: 1820px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1820px;
   }
 
   #texte_presentation_mobile {
@@ -243,7 +241,7 @@ form #valider input {
     display: block;
     font-size: 60px;
     text-align: center;
-    height: 800px;
+    height: 1000px;
   }
 
   #images_presentations_mobile {
@@ -257,7 +255,7 @@ form #valider input {
   #evenements {
     display: block;
     text-align: center;
-    height: 500px;
+    height: 600px;
   }
 
   #evenements iframe {
@@ -283,6 +281,7 @@ form #valider input {
   #images_presentations_desktop {
     display: block;
     text-align: center;
+    height: 700px;
   }
 
   #images_presentations_desktop #images {
@@ -308,4 +307,28 @@ form #valider input {
   #images_presentations_desktop p {
     font-size: 21px;
   }
+}
+
+@media only screen and (min-width: 1820px) {
+  .container {
+    margin: 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+
+  #texte_presentation_desktop {
+    height: 30%;
+  }
+
+  #evenements {
+    height: 30%;
+  }
+
+  #images_presentations_desktop {
+    height: 30%;
+  }
+
 }
