@@ -22,6 +22,7 @@ header {
   flex-direction: row;
   justify-content: center;
   background-color: white;
+  padding: 20px;
 }
 
 header img {
@@ -37,7 +38,7 @@ header h1 {
 #home_mobile {
   position: absolute;
   right: 5px;
-  top: 15px;
+  top: 40px;
 }
 
 nav {
@@ -53,6 +54,7 @@ nav {
   font-size: 60px;
   line-height: 80px;
   margin-bottom: 250px;
+  margin-top: 50px;
 }
 
 #texte_presentation_desktop {
@@ -84,7 +86,7 @@ nav {
 }
 
 #legende {
-  margin: 10px 10px;
+  margin: 10px 80px;
   text-align: center;
   font-size: 25px;
   line-height: 30px;
@@ -131,13 +133,33 @@ form #title {
   font-size: 30px;
 }
 
-form #email {
+form div {
   margin-top: 25px;
   text-align: center;
 }
 
+form div:nth-child(2) {
+  margin-top: 50px;
+}
+
+form label {
+  font-size: 20px;
+}
+
+form #nom input {
+  width: 410px;
+}
+
+form #prenom input {
+  width: 380px;
+}
+
+form #telephone input {
+  width: 358px;
+}
+
 form #email input {
-  width: 390px;
+  width: 395px;
 }
 
 input:invalid {
@@ -148,13 +170,8 @@ input:valid:focus {
   border-color: green;
 }
 
-form #evenement {
-  margin-top: 25px;
-  text-align: center;
-}
-
 form #evenement input {
-  width: 310px;
+  width: 293px;
 }
 
 form #valider {
@@ -214,7 +231,7 @@ form #valider input {
     display: inline-block;
     position: absolute;
     right: 50px;
-    top: 40px;
+    top: 60px;
   }
 
   nav li {
@@ -305,6 +322,10 @@ form #valider input {
 
   #images .element:last-child {
     margin-right: 0px;
+  }
+
+  #images_presentations_desktop h2 {
+    margin-top: 300px;
   }
 
   #images_presentations_desktop img {
