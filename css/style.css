@@ -50,8 +50,8 @@ nav {
 
 #texte_presentation_mobile {
   text-align: center;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 60px;
+  line-height: 80px;
   margin-bottom: 250px;
 }
 
@@ -67,8 +67,8 @@ nav {
 }
 
 #images_presentations_mobile img {
-  width: 360px;
-  height: 260px;
+  width: 430px;
+  height: 330px;
   border: 2px solid black;
   margin-bottom: 50px;
 }
@@ -128,7 +128,7 @@ form #title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 form #email {
