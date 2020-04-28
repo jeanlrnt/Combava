@@ -61,19 +61,26 @@ nav {
 
 #images_presentations_mobile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 80px;
   justify-content: center;
 }
 
 #images_presentations_mobile img {
-  width: 300px;
-  height: 200px;
+  width: 360px;
+  height: 260px;
   border: 2px solid black;
+  margin-bottom: 50px;
 }
 
 .images1 {
-  margin-right: 15px;
+  display: flex;
+  margin: auto;
+}
+
+.images2{
+  display: flex;
+  margin: auto;
 }
 
 #legende {
@@ -104,7 +111,7 @@ iframe {
 }
 
 form {
-  width: 475px;
+  width: 550px;
   border: 2px solid black;
   border-radius: 5%;
   padding: 10px;
@@ -114,14 +121,14 @@ form {
 }
 
 form #title {
-  width: 450px;
+  width: 550px;
   text-align: center;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 form #email {
@@ -130,7 +137,7 @@ form #email {
 }
 
 form #email input {
-  width: 383px;
+  width: 390px;
 }
 
 input:invalid {
@@ -147,7 +154,7 @@ form #evenement {
 }
 
 form #evenement input {
-  width: 300px;
+  width: 310px;
 }
 
 form #valider {
@@ -157,7 +164,7 @@ form #valider {
 }
 
 form #valider input {
-  width: 80px;
+  width: 90px;
   border-radius: 5px;
 }
 
