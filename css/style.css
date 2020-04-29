@@ -13,7 +13,7 @@
 
 .container {
   background-image: url(../images/fond_mobile.png);
-  background-repeat: repeat-y;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 
 #evenements {
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 
@@ -135,14 +135,12 @@ form #title {
 
 form div {
   margin-top: 25px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-form div:nth-child(2) {
-  margin-top: 50px;
-}
-
 form label {
+  margin-top: 50px;
   font-size: 20px;
 }
 
@@ -159,7 +157,7 @@ form #telephone input {
 }
 
 form #email input {
-  width: 395px;
+  width: 404px;
 }
 
 input:invalid {
@@ -171,7 +169,7 @@ input:valid:focus {
 }
 
 form #evenement input {
-  width: 293px;
+  width: 290px;
 }
 
 form #valider {
@@ -250,8 +248,8 @@ form #valider input {
   }
 
   .container {
-    background-image: url(../images/fond_desktop.png);
-    background-size: cover;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
     margin: 0 auto;
     width: auto;
     max-width: 1820px;

@@ -2,6 +2,8 @@
 <html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page évènementiel de Combava, une association basée sur le concept de David's Lemonade">
   <title>Combava - Évènements</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
@@ -38,31 +40,31 @@
       <h2 class="sous-titre">Nos prochains évènements..</h2>
       <div class="desktop">
         <div class="element">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22266.501771572566!2d1.1860044!3d45.7649227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1587731493819!5m2!1sfr!2sfr" width="500" height="675" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22266.501771572566!2d1.1860044!3d45.7649227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1587731493819!5m2!1sfr!2sfr" title="map" width="500" height="560" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div class="element">
           <form class="test" action="index.html" method="post">
             <div>
               <p id="title">Inscrivez-vous pour rester informés</p>
             </div>
-            <div id="nom">
-              <label>Nom :</label>
+            <label id="nom">
+              Nom :
               <input required type="text" placeholder=" votre nom">
-            </div>
-            <div id="prenom">
-              <label>Prénom :</label>
+            </label>
+            <label id="prenom">
+              Prénom :
               <input required type="text" placeholder=" votre prénom">
-            </div>
-            <div id="telephone">
-              <label>Téléphone :</label>
+            </label>
+            <label id="telephone">
+              Téléphone :
               <input required type="text" placeholder=" 00 00 00 00 00">
-            </div>
-            <div id="email">
-              <label>E-mail :</label>
+            </label>
+            <label id="email">
+              <br>Email :
               <input type="email" placeholder=" combava@email.com" required name="user_email" title="Veuillez saisir votre adresse e-mail">
-            </div>
-            <div id="evenement">
-              <label>Évenement choisi :</label>
+            </label>
+            <label id="evenement">
+              Évenement choisi :
               <input required placeholder=" Choisir un évènement de la liste" list="defaultAdress">
               <datalist id="defaultAdress">
                 <option value="AMAP Poitiers">AMAP les Grand'Goules (3 Rue des Gravières, 86000 Grand Poitiers)</option>
@@ -81,11 +83,11 @@
                 <option value="BioCBon Paris">Bio c'Bon (116 Avenue d'Italie, 75013 Paris)</option>
                 <option value="ComptoirsBio Auxerre">Les Comptoirs de la Bio (4 Avenue de Worms, 89000 Auxerre)</option>
               </datalist>
-            </div>
-            <div id="accord">
-              <label>Souhaitez-vous être informés des prochains évènements ?</label>
+            </label>
+            <label id="accord">
+              Souhaitez-vous être informés des prochains évènements ?
               <input type="checkbox">
-            </div>
+            </label>
             <div id="valider">
               <input type="submit" value="ENVOYER">
             </div>
