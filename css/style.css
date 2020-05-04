@@ -14,7 +14,8 @@
 .container {
   background-image: url(../images/fond_mobile.png);
   background-attachment: fixed;
-  width: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
 }
 
 header {
