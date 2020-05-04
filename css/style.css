@@ -13,7 +13,7 @@
 
 .container {
   background-image: url(../images/fond_mobile.png);
-  background-repeat: repeat-y;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 
 #evenements {
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 
@@ -249,8 +249,7 @@ form #valider input {
 
   .container {
     background-image: url(../images/background.jpg);
-    background-size: 100%;
-    background-repeat: repeat-y;
+    background-attachment: fixed;
     margin: 0 auto;
     width: auto;
     max-width: 1820px;
@@ -265,7 +264,7 @@ form #valider input {
     display: block;
     font-size: 60px;
     text-align: center;
-    height: 800px;
+    height: 1000px;
   }
 
   #images_presentations_mobile {
@@ -279,7 +278,7 @@ form #valider input {
   #evenements {
     display: block;
     text-align: center;
-    height: 700px;
+    height: 600px;
   }
 
   #evenements iframe {
